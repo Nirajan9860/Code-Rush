@@ -1,0 +1,28 @@
+.container {
+    width: 110rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 75em) {
+    .container {
+        width: 85rem;
+    }
+}
+
+@media screen and (max-width: 59.375em) {
+    .container {
+        width: 70rem;
+    }
+}
+
+@media screen and (max-width: 46.875em) {
+    .container {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 34.375em) {
+    .container {
+        width: 30rem;
+    }
+}

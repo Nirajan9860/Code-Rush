@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li style="float: left">
+          <h3>Code Rush</h3>
+        </li>
+        <li><a href="#facts">Facts</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#arabic">Arabic Form</a></li>
+        <li><a href="#sliding-image">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="canvas">
+      <h1>Image slider</h1>
+      <canvas id="myCanvas"> </canvas>
+    </div>
+    <form>
+      <fieldset>
+        <legend>Arabic Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" dir="rtl" />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" dir="rtl"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <div class="container">
+      <div class="news-article">
+        <h1 class="article__heading">
+          Pilots Should be trained to handle technical failures: Aviation safety
+          expert
+        </h1>
+        <div class="article__content">
+          <div class="content__first-quadrant">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              eius. Magnam, neque! Provident, repudiandae cupiditate doloribus
+              labore culpa id debitis? Rem vitae soluta adipisci optio
+              cupiditate repellat saepe labore dignissimos perspiciatis dolore
+              officiis pariatur officia autem cumque inventore voluptatibus
+              suscipit illo sunt, veritatis tempora neque incidunt sed expedita?
+              Minima ipsa voluptas blanditiis unde autem necessitatibus odit
+              obcaecati! Impedit commodi rem nihil ullam
+            </p>
+            <p>
+              velit vitae laudantium ex ad necessitatibus minima esse
+              exercitationem numquam cum voluptatum rerum, optio sint voluptatem
+              deleniti incidunt sunt dolore delectus a? Unde, adipisci! Quaerat
+              commodi minus eligendi incidunt repudiandae ullam, similique
+              expedita est consequuntur recusandae nisi nobis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
+              blanditiis libero quaerat error vel corporis quasi sint eius.
+              Saepe quibusdam modi blanditiis velit ratione similique voluptates
+              nulla accusantium, harum a dolor, nemo aspernatur maiores illum
+              possimus beatae vero odio voluptatum quaerat esse consequuntur
+              deleniti ad. In eligendi dolore nisi quam?
+            </p>
+          </div>
+          <div class="content__second-quadrant">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+              inventore voluptate debitis perferendis repellat facilis, expedita
+              amet nobis assumenda neque, ducimus odit nulla eveniet! Sunt
+              obcaecati, ipsum pariatur debitis repellendus et voluptas?
+              Voluptatibus alias sed fugiat corporis magni a optio laudantium,
+              soluta ducimus harum illum ad molestiae laborum! Magni eligendi
+              minima veritatis non molestias repellendus, maiores quidem eum
+              adipisci tempora quos ut animi illum autem
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+              quaerat soluta debitis neque ab nisi sapiente corrupti amet
+              ratione. Error cum doloremque vero ratione maiores, provident sunt
+              tempora vel quas.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              tempore officia velit facilis eius quidem quibusdam inventore
+              impedit fugiat corrupti aut sequi repellat deserunt, magnam
+              architecto accusamus voluptatem neque, soluta cum. Vitae rerum
+              pariatur laudantium reiciendis et deleniti ad incidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="section__grid">
+        <h1 class="grid__title">Grid Title</h1>
+        <ul class="grid-container">
+          <li class="card card-1">Item 1</li>
+          <li class="card card-2">Item 2</li>
+          <li class="card card-3">Item 3</li>
+          <li class="card card-4">Item 4</li>
+        </ul>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
