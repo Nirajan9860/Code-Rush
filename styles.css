@@ -4,23 +4,122 @@ canvas#myCanvas {
   align-items: center;
   border: 1px solid #000000;
 }
-form {
-  margin: 0 auto;
-}
 fieldset {
-  background-color: #eeeeee;
-  width: 100px;
+  background-color: #97d848;
   text-align: center;
 }
-
-legend {
-  background-color: gray;
-  color: white;
-  padding: 5px 10px;
+/* .from {
+  text-align: center;
+  width: 50%;
+} */
+f.contact_form {
+  width: 450px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
 }
 
 input {
-  margin: 5px;
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ec576b;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  direction: rtl;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ec576b;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  direction: rtl;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ec576b;
+  border-color: #ec576b;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #ec576b;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #ec576b;
+}
+
+h3 {
+  font-size: 14px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formu input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formu textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
 }
 
 body {
@@ -35,7 +134,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(104, 118, 121);
+  background-color: rgb(106, 118, 100);
   position: fixed;
   width: 100%;
   height: 47px;
@@ -48,6 +147,7 @@ li {
 li h3 {
   color: #ebe9e9;
   padding-left: 20px;
+  font-size: 1.3em;
 }
 
 li a {
@@ -60,4 +160,69 @@ li a {
 
 li a:hover {
   background-color: rgb(48, 59, 67);
+}
+
+/* last question */
+
+.row {
+  margin-top: 10%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: rgb(133, 166, 237);
+}
+
+.row > h1 {
+  text-align: center;
+}
+.containers {
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.text:hover {
+  background-color: rgb(160, 160, 238);
+  transform: scale(1.1);
+}
+
+.element {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 700px) {
+  .arabic {
+    width: 100%;
+  }
+  .sliding-image {
+    padding-top: 50px;
+    padding-bottom: 600px;
+  }
+  .container {
+    top: 50%;
+  }
+
+  /*GRID*/
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .element {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .text:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .element {
+    font-size: 1.2em;
+    text-align: center;
+  }
 }

@@ -19,31 +19,97 @@
         <li style="float: left">
           <h3>Code Rush</h3>
         </li>
-        <li><a href="#facts">Facts</a></li>
+        <li><a href="#grid">Grid List</a></li>
         <li><a href="#news">News</a></li>
-        <li><a href="#arabic">Arabic Form</a></li>
-        <li><a href="#sliding-image">Gallery</a></li>
+        <li><a href="#form">Arabic Form</a></li>
+        <li><a href="#canvas">Gallery</a></li>
       </ul>
     </div>
 
-    <div class="canvas">
+    <div class="canvas" id="canvas">
       <h1>Image slider</h1>
       <canvas id="myCanvas"> </canvas>
     </div>
-    <form>
-      <fieldset>
-        <legend>Arabic Form</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" dir="rtl" />
-        <br />
-        <label for="message">Message:</label>
-        <textarea id="message" dir="rtl"></textarea>
-        <br />
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
+    <div class="contact_form" id="form">
+      <div class="formu">
+       
+          <h1>Contact Form</h1>
+          <h3>Please input correct information</h3>
+          <fieldset >
+            <legend></legend>
+            <form action="submit" method="post">
+              <p>
+                <label for="name"
+                  >Name
+                  <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="introduzir_nome"
+                  id="nome"
+                  required="obrigatorio"
+                  placeholder="John Doe"
+                />
+              </p>
 
-    <div class="container">
+              <p>
+                <label for="email" class="input_email"
+                  >Email
+                  <span>*</span>
+                </label>
+                <input
+                  type="email"
+                  name="input_email"
+                  id="email"
+                  required="obrigatorio"
+                  placeholder="example@abc.com"
+                />
+              </p>
+
+              <p>
+                <label for="telephone">Telephone </label>
+                <input
+                  type="number"
+                  name="input_telephone"
+                  id="telephone"
+                  placeholder="+977 ***"
+                />
+              </p>
+
+              <p>
+                <label for="website">Website </label>
+                <input
+                  type="url"
+                  name="input_website"
+                  id="website"
+                  placeholder="www.example.com"
+                />
+              </p>
+
+              <p>
+                <label for="message"
+                  >Message
+                  <span>*</span>
+                </label>
+                <textarea
+                  name="input_message"
+                  class="text"
+                  id="message"
+                  required
+                  placeholder="please write your message here..."
+                ></textarea>
+              </p>
+
+              <button type="submit" name="submit_form" id="enviar">
+                <p>Sumbit</p>
+              </button>
+            </form>
+          </fieldset>
+        
+      </div>
+    </div>
+
+    <div class="container" id="news">
       <div class="news-article">
         <h1 class="article__heading">
           Pilots Should be trained to handle technical failures: Aviation safety
@@ -106,17 +172,32 @@
       </div>
     </div>
 
-    <div class="container">
-      <section class="section__grid">
-        <h1 class="grid__title">Grid Title</h1>
-        <ul class="grid-container">
-          <li class="card card-1">Item 1</li>
-          <li class="card card-2">Item 2</li>
-          <li class="card card-3">Item 3</li>
-          <li class="card card-4">Item 4</li>
-        </ul>
-      </section>
-    </div>
+    <div class="row" id="grid" >
+      <h1>Content in List when maximized and in grid when small</h1>
+      
+      <div class="list">
+          <div class="containers element">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium cupiditate mollitia 
+                nostrum nesciunt alias! Voluptatum mollitia veritatis reiciendis consequatur ipsam dolorum expedita. Animi sed 
+                hic asperiores est voluptatibus a?</p>
+          </div>
+          <div class="containers element">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium cupiditate mollitia 
+              nostrum nesciunt alias! Voluptatum mollitia veritatis reiciendis consequatur ipsam dolorum expedita. Animi sed 
+              hic asperiores est voluptatibus a?</p>
+
+          </div>
+          <div class="containers element">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium cupiditate mollitia 
+              nostrum nesciunt alias! Voluptatum mollitia veritatis reiciendis consequatur ipsam dolorum expedita. Animi sed 
+              hic asperiores est voluptatibus a?</p>
+          </div>
+          <div class="containers element">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium cupiditate mollitia 
+              nostrum nesciunt alias! Voluptatum mollitia veritatis reiciendis consequatur ipsam dolorum expedita. Animi sed 
+              hic asperiores est voluptatibus a?</p>
+          </div>
+      </div>
     <script src="script.js"></script>
   </body>
 </html>
